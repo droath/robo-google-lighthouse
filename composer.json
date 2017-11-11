@@ -1,0 +1,19 @@
+{
+    "name": "droath/robo-google-lighthouse",
+    "description": "Google lighthouse for Robo Task Runner",
+    "license": "MIT",
+    "keywords": ["google", "lighthouse", "robo", "task runner"],
+    "type": "robo-tasks",
+    "require": {
+        "php": ">=5.5.0",
+        "consolidation/robo": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Droath\\RoboGoogleLighthouse\\": "./src"
+        }
+    }
+}
