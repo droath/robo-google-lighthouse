@@ -156,7 +156,10 @@ class GoogleLighthouse extends BaseTask
      */
     public function chromeFlags(array $flags)
     {
-        $this->option('chrome-flags', implode(' ', $flags));
+        if (!empty($flags)) {
+            $chrome_flags = implode(' ', $flags);
+            $this->option('chrome-flags', "'$chrome_flags'");
+        }
 
         return $this;
     }
